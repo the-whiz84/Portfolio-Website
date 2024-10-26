@@ -1,7 +1,36 @@
 {% extends "base.html" %}
-
+{% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>Home</h1>
-<p>Welcome to the home page!</p>
+<!-- -------- START HEADER 1 w/ text and image on right ------- -->
+<header>
+    <div class="page-header min-vh-100"
+        style="background-image: url({{ url_for('static', filename='assets/img/bg_ygdrasil.png') }});"
+        loading="lazy">
+        <span class="mask bg-gradient-dark opacity-2"></span>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
+                    <h1 class="text-white font-weight-black mb-4">Radu Chiriac
+                    </h1>
+                    <p class="text-white opacity-8 lead pe-5 me-5">I'm just a
+                        guy passionate about tech and Linux. I dabble in Python
+                        and
+                        DevOps.</p>
+                    <div class="buttons">
+                        <button type="button"
+                            class="btn btn-white mt-4">Resume</button>
+                        <button type="button"
+                            class="btn text-white shadow-none mt-4">
+                            <i
+                                class="material-symbols-rounded opacity-6 me-2 text-md">home_pin</i>Brasov,
+                            Romania</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- -------- END HEADER 1 w/ text and image on right ------- -->
 {% endblock %}
