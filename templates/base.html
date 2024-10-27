@@ -11,6 +11,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
+<!-- <html lang="en"> -->
 <html lang="en" class="h-100" data-bs-theme="dark">
 
 <head>
@@ -44,7 +45,7 @@
                 <nav
                     class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none navbar-transparent position-absolute my-3 p-2 start-0 end-0 mx-4">
                     <div class="container">
-                        <a class="navbar-brand  text-white "
+                        <a class="navbar-brand  text-white"
                             href="{{ url_for('home') }}" rel="tooltip"
                             title="Home" data-placement="bottom" target="_self">
                             Zero-Dawn v2.0
@@ -68,21 +69,22 @@
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
                                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
-                                        href="javascript:;">
+                                        href="{{ url_for('home') }}">
                                         <i
                                             class="material-symbols-rounded opacity-6 me-2 text-md">home</i>
                                         Home
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white"
+                                    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
                                         href="javascript:;">
                                         About Me
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white"
-                                        href="javascript:;">
+                                    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                                        href="mailto:radu@zerodawn.tech"><i
+                                            class="material-symbols-rounded opacity-6 me-2 text-md">mail</i>
                                         Contact Me
                                     </a>
                                 </li>
@@ -91,7 +93,7 @@
                             <ul class="nav navbar-nav">
                                 <li class="nav-item my-auto ms-3 ms-lg-0">
                                     <a href="https://www.zerodawn.tech"
-                                        class="btn btn-sm text-dark  bg-white  mb-0 me-1 mt-2 mt-md-0">Zero-Dawn
+                                        class="btn btn-sm text-dark  bg-success  mb-0 me-1 mt-2 mt-md-0">Zero-Dawn
                                         v1.0</a>
                                 </li>
                             </ul>
@@ -177,10 +179,6 @@
     <script src="../static/assets/js/plugins/perfect-scrollbar.min.js"></script>
     <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
     <script src="../static/assets/js/plugins/countup.min.js"></script>
-    <!--  Google Maps Plugin    -->
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhWFdEmQ3oZl5CYztBojkXJKHm4HD0ixM&libraries=maps,marker&v=beta">
-        </script>
     <script src="../static/assets/js/material-kit.min.js?v=3.1.0"
         type="text/javascript"></script>
     <script>

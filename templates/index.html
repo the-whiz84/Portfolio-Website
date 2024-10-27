@@ -4,8 +4,8 @@
 <!-- -------- START HEADER 7 w/ text and video ------- -->
 <header class="bg-gradient-dark">
     <div class="page-header min-vh-75"
-        style="background-image: url({{ url_for('static', filename='assets/img/bg_stripes.jpg') }});">
-        <span class="mask bg-gradient-dark opacity-4"></span>
+        style="background-image: url({{ url_for('static', filename='assets/img/bg-magic.png') }});">
+        <span class="mask bg-gradient-dark opacity-3"></span>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center mx-auto my-auto">
@@ -14,25 +14,28 @@
                         <img class="w-100 border-radius-md shadow-lg"
                             src="../static/assets/img/Radu.png" alt="image">
                     </div>
+                    <h5 class="d-flex justify-content-center text-primary">
+                        Hello, I'm</h5>
                     <h1 class="text-white">RADU CHIRIAC</h1>
-                    <p class="lead mb-4 text-white opacity-8">I'm just a guy
+                    <h2 class="lead mb-4 text-white opacity-8">I'm just a guy
                         passionate about tech and Linux. I dabble in Python and
-                        DevOps.</p>
+                        DevOps.</h2>
 
-                    <h6 class="text-white mb-2 mt-5">Find me on</h6>
+                    <h5 class="text-white mb-2 mt-5">Find me on</h5>
                     <div class="d-flex justify-content-center">
-                        <a href="javascript:;"><i
-                                class="fab fa-facebook text-lg text-white me-4"></i></a>
-                        <a href="javascript:;"><i
-                                class="fab fa-instagram text-lg text-white me-4"></i></a>
-                        <a href="javascript:;"><i
-                                class="fab fa-twitter text-lg text-white me-4"></i></a>
-                        <a href="javascript:;"><i
-                                class="fab fa-google-plus text-lg text-white"></i></a>
+                        <a href="https://www.facebook.com/TheWhiz13/"><i
+                                class="fab fa-facebook text-lg text-primary me-4"></i></a>
+                        <a href="https://github.com/the-whiz84"><i
+                                class="fab fa-github text-lg text-white me-4"></i></a>
+                        <a href="https://www.linkedin.com/in/radu-chiriac/"><i
+                                class="fab fa-linkedin text-lg text-warning me-4"></i></a>
+                        <a href="https://x.com/the_whiz84   "><i
+                                class="fab fa-twitter text-lg text-info"></i></a>
                     </div>
                     <div class="buttons">
-                        <button type="button"
-                            class="btn btn-sm text-dark bg-white mt-4">Resume</button>
+                        <a href="{{ url_for('static', filename='files/Resume.pdf') }}"
+                            class="btn btn-sm text-dark bg-white mt-4"
+                            target="_blank">View Resume</a>
                         <a href="https://maps.app.goo.gl/u9i9G49btVbKAqBWA"
                             target="_blank"
                             class=" btn text-white shadow-none mt-4">
@@ -46,140 +49,329 @@
     </div>
 </header>
 <!-- -------- END HEADER 7 w/ text and video ------- -->
-<!-- START Blogs w/ 4 cards w/ image & text & link -->
-<section class="py-3">
+
+<!-- START Skills -->
+<div class="row text-center py-3 mt-3">
+    <div class="col-4 mx-auto">
+        <div class="nav-wrapper position-relative end-0">
+            <ul class="nav nav-pills nav-fill p-1" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link mb-0 px-0 py-1 active"
+                        data-bs-toggle="tab" href="#profile-tabs-simple"
+                        role="tab" aria-controls="experience"
+                        aria-selected="true">
+                        My Experience
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab"
+                        href="#dashboard-tabs-simple" role="tab"
+                        aria-controls="education" aria-selected="false">
+                        Education
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- START Experience -->
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="profile-tabs-simple"
+        role="tabpanel" aria-labelledby="profile-tabs-simple">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <strong>Company Name:</strong> TechCorp<br>
+                        <strong>Period:</strong> Jan 2020 - Present<br>
+                        <strong>Description:</strong> Lead Developer working on
+                        various web applications and services.
+                    </li>
+                    <li class="mt-3">
+                        <strong>Company Name:</strong> DevSolutions<br>
+                        <strong>Period:</strong> Jun 2018 - Dec 2019<br>
+                        <strong>Description:</strong> Software Engineer focusing
+                        on backend development and database management.
+                    </li>
+                    <li class="mt-3">
+                        <strong>Company Name:</strong> CodeFactory<br>
+                        <strong>Period:</strong> Mar 2016 - May 2018<br>
+                        <strong>Description:</strong> Junior Developer involved
+                        in front-end development and UI/UX design.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Experience -->
+
+<!-- START Education -->
+<div class="tab-pane fade" id="dashboard-tabs-simple" role="tabpanel"
+    aria-labelledby="dashboard-tabs-simple">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h3 class="mb-5">Check my latest blogposts</h3>
+                <h3 class="mb-5">Education</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="card card-plain">
-                    <div class="card-header p-0 position-relative">
-                        <a class="d-block blur-shadow-image">
-                            <img src="../../static/assets/img/examples/testimonial-6-2.jpg"
-                                alt="img-blur-shadow"
-                                class="img-fluid shadow border-radius-lg"
-                                loading="lazy">
-                        </a>
-                    </div>
-                    <div class="card-body px-0">
-                        <h5>
-                            <a href="javascript:;"
-                                class="text-dark font-weight-bold">Rover
-                                raised $65
-                                million</a>
-                        </h5>
-                        <p>
-                            Finding temporary housing for your dog should be
-                            as easy as
-                            renting an Airbnb. That’s the idea behind Rover
-                            ...
-                        </p>
-                        <a href="javascript:;"
-                            class="text-info text-sm icon-move-right">Read
-                            More
-                            <i class="fas fa-arrow-right text-xs ms-1"></i>
-                        </a>
-                    </div>
+            <div class="col-lg-4 col-sm-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <strong>Institution:</strong> University of Tech<br>
+                        <strong>Period:</strong> Sep 2012 - Jun 2016<br>
+                        <strong>Degree:</strong> Bachelor of Science in Computer
+                        Science
+                    </li>
+                    <li class="mt-3">
+                        <strong>Institution:</strong> High School of Science<br>
+                        <strong>Period:</strong> Sep 2008 - Jun 2012<br>
+                        <strong>Degree:</strong> High School Diploma
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Education -->
+<!-- END Skills -->
+<div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Icon grid</h2>
+
+    <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#cpu-fill"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#calendar3"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#home"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#toggles2"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#geo-fill"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em" height="1.75em">
+                <use xlink:href="#tools"></use>
+            </svg>
+            <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title
+                </h3>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <!-- START Projects w/ 4 cards w/ image & text & link -->
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-5">Check my latest Projects</h3>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="card card-plain">
-                    <div class="card-header p-0 position-relative">
-                        <a class="d-block blur-shadow-image">
-                            <img src="../../static/assets/img/examples/testimonial-6-3.jpg"
-                                alt="img-blur-shadow"
-                                class="img-fluid shadow border-radius-lg"
-                                loading="lazy">
-                        </a>
-                    </div>
-                    <div class="card-body px-0">
-                        <h5>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="../../static/assets/img/examples/testimonial-6-2.jpg"
+                                    alt="img-blur-shadow"
+                                    class="img-fluid shadow border-radius-lg"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5>
+                                <a href="javascript:;"
+                                    class="text-dark font-weight-bold">Rover
+                                    raised $65
+                                    million</a>
+                            </h5>
+                            <p>
+                                Finding temporary housing for your dog should be
+                                as easy as
+                                renting an Airbnb. That’s the idea behind Rover
+                                ...
+                            </p>
                             <a href="javascript:;"
-                                class="text-dark font-weight-bold">MateLabs
-                                machine
-                                learning</a>
-                        </h5>
-                        <p>
-                            If you’ve ever wanted to train a machine
-                            learning model
-                            and integrate it with IFTTT, you now can with
-                            ...
-                        </p>
-                        <a href="javascript:;"
-                            class="text-info text-sm icon-move-right">Read
-                            More
-                            <i class="fas fa-arrow-right text-xs ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="card card-plain">
-                    <div class="card-header p-0 position-relative">
-                        <a class="d-block blur-shadow-image">
-                            <img src="../../static/assets/img/examples/blog-9-4.jpg"
-                                alt="img-blur-shadow"
-                                class="img-fluid shadow border-radius-lg"
-                                loading="lazy">
-                        </a>
-                    </div>
-                    <div class="card-body px-0">
-                        <h5>
-                            <a href="javascript:;"
-                                class="text-dark font-weight-bold">MateLabs
-                                machine
-                                learning</a>
-                        </h5>
-                        <p>
-                            If you’ve ever wanted to train a machine
-                            learning model
-                            and integrate it with IFTTT, you now can with
-                            ...
-                        </p>
-                        <a href="javascript:;"
-                            class="text-info text-sm icon-move-right">Read
-                            More
-                            <i class="fas fa-arrow-right text-xs ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-12">
-                <div class="card card-blog card-background cursor-pointer">
-                    <div class="full-background"
-                        style="background-image: url('../../static/assets/img/examples/blog2.jpg')"
-                        loading="lazy"></div>
-                    <div class="card-body">
-                        <div class="content-left text-start my-auto py-4">
-                            <h2 class="card-title text-white">Flexible work
-                                hours</h2>
-                            <p class="card-description text-white">Rather
-                                than worrying
-                                about switching offices every couple years,
-                                you stay in the
-                                same place.</p>
-                            <a href="javascript:;"
-                                class="text-white text-sm icon-move-right">Read
+                                class="text-info text-sm icon-move-right">Read
                                 More
                                 <i class="fas fa-arrow-right text-xs ms-1"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="../../static/assets/img/examples/testimonial-6-3.jpg"
+                                    alt="img-blur-shadow"
+                                    class="img-fluid shadow border-radius-lg"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5>
+                                <a href="javascript:;"
+                                    class="text-dark font-weight-bold">MateLabs
+                                    machine
+                                    learning</a>
+                            </h5>
+                            <p>
+                                If you’ve ever wanted to train a machine
+                                learning model
+                                and integrate it with IFTTT, you now can with
+                                ...
+                            </p>
+                            <a href="javascript:;"
+                                class="text-info text-sm icon-move-right">Read
+                                More
+                                <i class="fas fa-arrow-right text-xs ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain">
+                        <div class="card-header p-0 position-relative">
+                            <a class="d-block blur-shadow-image">
+                                <img src="../../static/assets/img/examples/blog-9-4.jpg"
+                                    alt="img-blur-shadow"
+                                    class="img-fluid shadow border-radius-lg"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5>
+                                <a href="javascript:;"
+                                    class="text-dark font-weight-bold">MateLabs
+                                    machine
+                                    learning</a>
+                            </h5>
+                            <p>
+                                If you’ve ever wanted to train a machine
+                                learning model
+                                and integrate it with IFTTT, you now can with
+                                ...
+                            </p>
+                            <a href="javascript:;"
+                                class="text-info text-sm icon-move-right">Read
+                                More
+                                <i class="fas fa-arrow-right text-xs ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                    <div class="card card-blog card-background cursor-pointer">
+                        <div class="full-background"
+                            style="background-image: url('../../static/assets/img/examples/blog2.jpg')"
+                            loading="lazy"></div>
+                        <div class="card-body">
+                            <div class="content-left text-start my-auto py-4">
+                                <h2 class="card-title text-white">Flexible work
+                                    hours</h2>
+                                <p class="card-description text-white">Rather
+                                    than worrying
+                                    about switching offices every couple years,
+                                    you stay in the
+                                    same place.</p>
+                                <a href="javascript:;"
+                                    class="text-white text-sm icon-move-right">Read
+                                    More
+                                    <i
+                                        class="fas fa-arrow-right text-xs ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<gmp-map center="45.65223693847656,25.610698699951172" zoom="14"
-    map-id="DEMO_MAP_ID">
-    <gmp-advanced-marker position="45.65223693847656,25.610698699951172"
-        title="My location"></gmp-advanced-marker>
-</gmp-map>
-<!-- END Blogs w/ 4 cards w/ image & text & link -->
+    </section>
+    <!-- END Projects w/ 4 cards w/ image & text & link -->
 </div>
 {% endblock %}
