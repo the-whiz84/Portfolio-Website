@@ -1,10 +1,6 @@
 import os
-from flask import Flask, abort, render_template, redirect, url_for
+from flask import Flask, render_template, url_for
 from flask_bootstrap import Bootstrap5
-
-# from flask_wtf import FlaskForm
-# from wtforms import StringField, SubmitField, PasswordField, EmailField
-# from wtforms.validators import DataRequired, URL, Email
 
 
 app = Flask(__name__)
