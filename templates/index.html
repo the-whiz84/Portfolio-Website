@@ -80,60 +80,165 @@
         role="tabpanel" aria-labelledby="experience-tabs-simple">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 my-auto">
-                    <h3 class="mt-5 mt-lg-0">Read More About Us</h3>
-                    <p class="pe-5">Pain is what we go through as we become
-                        older. We
-                        get insulted by others, lose trust for those others. We
-                        get back
-                        stabbed by friends. It becomes harder for us to give
-                        others a
-                        hand.</p>
-                    <a href="javascript:;"
-                        class="text-primary icon-move-right">More
-                        about us
-                        <i class="fas fa-arrow-right text-sm ms-1"></i>
-                    </a>
+                <div class="col-lg-4 my-auto">
+                    <h3 class="mt-5 mt-lg-0">Work Experience</h3>
                 </div>
-                <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+                <div class="col-lg-8 mt-lg-0 mt-5 ps-lg-0 ps-0">
                     <div class="p-3 info-horizontal">
                         <div
-                            class="icon icon-shape  bg-gradient-dark shadow-dark text-center">
-                            <i class="fas fa-ship opacity-10"></i>
+                            class="icon icon-shape bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/eviden.png') }}"
+                                alt="eviden" class="w-80">
                         </div>
                         <div class="description ps-3">
-                            <p class="mb-0">It becomes harder for us to give
-                                others a
-                                hand. <br> We get our heart broken by people we
-                                love.
-                            </p>
+                            <h5 class="mt-5 mt-lg-0">HPC Technical Engineer</h5>
+                            <h6 class="mt-5 mt-lg-0">Eviden Technologies: July
+                                2023 - Present</h6>
+                            <ul class="mb-0">
+                                <li>Supporting the server infrastructure for a
+                                    German auto maker for one of it’s
+                                    most critical projects.</li>
+                                <li>Using Puppet for configuration management
+                                    and automatic patching of RHEL servers.</li>
+                                <li>Monitoring the infrastructure using
+                                    ManageNow for Datacenter Monitoring (MN4DCM)
+                                    from Fujitsu.</li>
+                                <li>Participating in a project to migrate
+                                    obsolete RHV-Manager servers to new vSphere
+                                    cluster </li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="p-3 info-horizontal">
                         <div
-                            class="icon icon-shape  bg-gradient-dark shadow-dark text-center">
-                            <i class="fas fa-handshake opacity-10"></i>
+                            class="icon icon-shape  bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/atos.svg') }}"
+                                alt="atos" class="w-80">
                         </div>
                         <div class="description ps-3">
-                            <p class="mb-0">As we live, our hearts turn colder.
-                                <br>Cause pain is what we go through as we
-                                become older.
-                            </p>
+                            <h5 class="mt-5 mt-lg-0">HPC Technical Engineer</h5>
+                            <h6 class="mt-5 mt-lg-0">ATOS Romania: Feb. 2022 -
+                                July 2023
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Reviewing all the existing technical
+                                    documentation and updating it accordingly
+                                    to the current requirements.</li>
+                                <li>Using Puppet for configuration management
+                                    and automatic patching of RHEL servers.</li>
+                                <li>Monitoring the infrastructure using
+                                    ManageNow for Datacenter Monitoring (MN4DCM)
+                                    from Fujitsu.</li>
+                                <li>Participating in a project to migrate
+                                    existing remote locations to a more
+                                    streamlined solution.</li>
+                            </ul>
                         </div>
                     </div>
+
                     <div class="p-3 info-horizontal">
                         <div
-                            class="icon icon-shape  bg-gradient-dark shadow-dark text-center">
-                            <i class="fas fa-hourglass opacity-10"></i>
+                            class="icon icon-shape  bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/CGS.svg') }}"
+                                alt="cgs" class="w-80">
                         </div>
                         <div class="description ps-3">
-                            <p class="mb-0">When we lose family over time. <br>
-                                What
-                                else could rust the heart more over time?
-                                Blackgold.</p>
+                            <h5 class="mt-5 mt-lg-0">Technical Support Engineer
+                                - Okta</h5>
+                            <h6 class="mt-5 mt-lg-0">CGS Romania: April 2020 -
+                                Jan. 2022
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Resolving support tickets submitted by
+                                    customers.</li>
+                                <li>Helping new admins to implement SSO, MFA and
+                                    federation for their applications
+                                    using SAML, OIDC and SCIM.</li>
+                                <li>Writing new Knowledge Articles for problems
+                                    and possible solutions not yet
+                                    documented.</li>
+                                <li>Troubleshooting Okta Access Gateway (a
+                                    reverse proxy solution offered to
+                                    customers to protect on-prem applications
+                                    using header-based authentication and
+                                    authorization) using ssh connections and
+                                    Linux CLI.</li>
+                            </ul>
                         </div>
                     </div>
+
+                    <div class="p-3 info-horizontal">
+                        <div
+                            class="icon icon-shape  bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/CGS.svg') }}"
+                                alt="cgs" class="w-80">
+                        </div>
+                        <div class="description ps-3">
+                            <h5 class="mt-5 mt-lg-0">L2 Technical Mentor - Dell
+                            </h5>
+                            <h6 class="mt-5 mt-lg-0">CGS Romania: April 2018 -
+                                March 2020
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Provide guidance and support for the Level 1
+                                    support team.</li>
+                                <li>Liason with the Level 3 team and create Jira
+                                    tickets for them and other internal
+                                    teams.</li>
+                                <li>Create and share new training materials for
+                                    latest products.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-3 info-horizontal">
+                        <div
+                            class="icon icon-shape  bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/CGS.svg') }}"
+                                alt="cgs" class="w-80">
+                        </div>
+                        <div class="description ps-3">
+                            <h5 class="mt-5 mt-lg-0">Technical Support Agent -
+                                Lenovo
+                            </h5>
+                            <h6 class="mt-5 mt-lg-0">CGS Romania: Oct. 2014 -
+                                April 2018
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Log new support tickets received by phone or
+                                    email.</li>
+                                <li>Troubleshoot hardware problems related to
+                                    laptops, PCs or mobile devices.</li>
+                                <li>Find root cause for the issues and provide
+                                    solution to customers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-3 info-horizontal">
+                        <div
+                            class="icon icon-shape  bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/CGS.svg') }}"
+                                alt="cgs" class="w-80">
+                        </div>
+                        <div class="description ps-3">
+                            <h5 class="mt-5 mt-lg-0">Back Office Agent - Sprint
+                            </h5>
+                            <h6 class="mt-5 mt-lg-0">CGS Romania: Aug. 2012 -
+                                Oct. 2014
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Log new support tickets received by phone or
+                                    email.</li>
+                                <li>Troubleshoot hardware problems related to
+                                    laptops, PCs or mobile devices.</li>
+                                <li>Find root cause for the issues and provide
+                                    solution to customers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -147,64 +252,66 @@
         aria-labelledby="education-tabs-simple">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 my-auto">
-                    <h3 class="mt-5 mt-lg-0">Read More About Us</h3>
-                    <p class="pe-5">Pain is what we go through as we become
-                        older.
-                        We
-                        get insulted by others, lose trust for those others. We
-                        get
-                        back
-                        stabbed by friends. It becomes harder for us to give
-                        others
-                        a
-                        hand.</p>
-                    <a href="javascript:;"
-                        class="text-primary icon-move-right">More
-                        about us
-                        <i class="fas fa-arrow-right text-sm ms-1"></i>
-                    </a>
+                <div class="col-lg-4 my-auto">
+                    <h3 class="mt-5 mt-lg-0">Education</h3>
                 </div>
-                <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+                <div class="col-lg-8 mt-lg-0 mt-5 ps-lg-0 ps-0">
                     <div class="p-3 info-horizontal">
                         <div
-                            class="icon icon-shape  bg-gradient-dark shadow-dark text-center">
-                            <i class="fas fa-ship opacity-10"></i>
+                            class="icon icon-shape  bg-gradient-light shadow-dark text-center">
+                            <img src="{{ url_for('static', filename='assets/img/logos/spiru_haret.jpg') }}"
+                                alt="cgs" class="w-100">
                         </div>
                         <div class="description ps-3">
-                            <p class="mb-0">It becomes harder for us to give
-                                others
-                                a
-                                hand. <br> We get our heart broken by people we
-                                love.
-                            </p>
+                            <h5 class="mt-5 mt-lg-0">Bachelor Degree in
+                                International Relations and European Studies
+                            </h5>
+                            <h6 class="mt-5 mt-lg-0">University of Spiru Haret,
+                                Bucharest: 2003-2007</h6>
+                            <ul class="mb-0">
+                                <li>Graduation Grade: 8.60/10</li>
+                                <li>European Studies: 9/10</li>
+                                <li>History of the European Union: 10/10</li>
+                                <li>Communication and Negotiations Skills: 8/10
+                                </li>
+                                <li>European Law: 9/10</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="p-3 info-horizontal">
                         <div
                             class="icon icon-shape  bg-gradient-dark shadow-dark text-center">
-                            <i class="fas fa-handshake opacity-10"></i>
+                            <i class="fas fa-graduation-cap opacity-10"></i>
                         </div>
                         <div class="description ps-3">
-                            <p class="mb-0">As we live, our hearts turn colder.
-                                <br>Cause pain is what we go through as we
-                                become
-                                older.
-                            </p>
+                            <h5 class="mt-5 mt-lg-0">Baccalaureate Diploma</h5>
+                            <h6 class="mt-5 mt-lg-0">Gheorghe Cartianu Technical
+                                College, Piatra-Neamt: 1999-2003
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Graduation Grade: 8.16/10</li>
+                            </ul>
                         </div>
                     </div>
+
                     <div class="p-3 info-horizontal">
                         <div
                             class="icon icon-shape  bg-gradient-dark shadow-dark text-center">
-                            <i class="fas fa-hourglass opacity-10"></i>
+                            <i class="fas fa-school opacity-10"></i>
                         </div>
                         <div class="description ps-3">
-                            <p class="mb-0">When we lose family over time. <br>
-                                What
-                                else could rust the heart more over time?
-                                Blackgold.
-                            </p>
+                            <h5 class="mt-5 mt-lg-0">Secondary School
+                                Certificate</h5>
+                            <h6 class="mt-5 mt-lg-0">Public School Nr 2,
+                                Piatra-Neamt: 1995-1999
+                            </h6>
+                            <ul class="mb-0">
+                                <li>Reached the Regional Stage in the
+                                    Mathematics school olympics.</li>
+                                <li>Took chess and airsoft rifle shooting
+                                    classes at the local Children's Club.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
