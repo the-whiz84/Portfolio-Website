@@ -27,7 +27,7 @@
     <link href="../static/assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="../static/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/42d5adcbca.js"
+    <script src="https://kit.fontawesome.com/65f2f487bc.js"
         crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link rel="stylesheet"
@@ -71,20 +71,37 @@
                                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
                                         href="{{ url_for('home') }}">
                                         <i
-                                            class="material-symbols-rounded opacity-6 me-2 text-md">home</i>
+                                            class="material-symbols-rounded opacity-8 me-1 text-md">home</i>
                                         Home
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
-                                        href="javascript:;">
-                                        About Me
+                                        href="#projects">
+                                        <i
+                                            class="material-symbols-rounded opacity-8 me-1 text-md">code_blocks</i>
+                                        Projects
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                                        href="#experience">
+                                        <i
+                                            class="material-symbols-rounded opacity-8 me-1 text-md">work_history</i>
+                                        Experience
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                                        href="#skills">
+                                        <i
+                                            class="material-symbols-rounded opacity-8 me-1 text-md">api</i>
+                                        Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
                                         href="mailto:radu@zerodawn.tech"><i
-                                            class="material-symbols-rounded opacity-6 me-2 text-md">mail</i>
+                                            class="material-symbols-rounded opacity-8 me-1 text-md">mail</i>
                                         Contact Me
                                     </a>
                                 </li>
@@ -115,29 +132,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-4 mx-auto text-center">
-                    <a href="javascript:;" target="_blank"
+                    <a href="{{ url_for('home')}}" target="_self"
                         class="text-success me-xl-5 me-3 mb-sm-0 mb-2">
-                        Company
+                        Home
                     </a>
-                    <a href="javascript:;" target="_blank"
+                    <a href="#projects" target="_self"
                         class="text-success me-xl-5 me-3 mb-sm-0 mb-2">
-                        About Us
+                        Projects
                     </a>
-                    <a href="javascript:;" target="_blank"
+                    <a href="#experience" target="_self"
                         class="text-success me-xl-5 me-3 mb-sm-0 mb-2">
-                        Team
+                        Experience
                     </a>
-                    <a href="javascript:;" target="_blank"
+                    <a href="#skills" target="_self"
                         class="text-success me-xl-5 me-3 mb-sm-0 mb-2">
-                        Products
+                        Skills
                     </a>
-                    <a href="javascript:;" target="_blank"
+                    <a href="{{ url_for('static', filename='files/Terms-Conditions.pdf') }}"
+                        target="_blank"
                         class="text-success me-xl-5 me-3 mb-sm-0 mb-2">
-                        Blog
+                        Terms and Conditions
                     </a>
-                    <a href="javascript:;" target="_blank"
+                    <a href="{{ url_for('static', filename='files/Privacy-Policy.pdf') }}"
+                        target="_blank"
                         class="text-success me-xl-5 me-3 mb-sm-0 mb-2">
-                        Pricing
+                        Privacy Policy
                     </a>
                 </div>
                 <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
