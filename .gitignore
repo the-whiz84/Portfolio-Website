@@ -1,9 +1,9 @@
 .DS_STORE
-.venv/*
+.venv
 .env
 *.pyc
 __pycache__/
 *.log
 *.db
-.vscode/*
+.vscode
 .github/*
